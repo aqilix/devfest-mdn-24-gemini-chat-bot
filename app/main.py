@@ -45,10 +45,12 @@ chat_session = model.start_chat(
     history=[]
 )
 
-print("Bot: Halo, bingung mau kuliah S1 jurusan apa?")
+welcome_message = os.getenv("WELCOME_MESSAGE")
+print(f'Bot: {welcome_message}')
 print()
 
 while True:
+    # receive input from user
     user_input = input("You: ")
 
     # exit from app
