@@ -59,3 +59,6 @@ The code consists of a single Python script (`main.py`) that performs the follow
 ### Authors
 
 - [Dolly Aswin Harahap](https://medium.com/@dollyaswin)
+
+### License
+The MIT License is used for this project. You can find the full license text here: https://opensource.org/license/mit.
