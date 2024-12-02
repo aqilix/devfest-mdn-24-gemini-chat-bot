@@ -13,28 +13,35 @@ This project requires the following Python library:
 
 Create your `.env` file, I have provide `.env.dist` as template for configurations. Just run `cp .env.dist .env` to create the file. Then adjust these configurations:
 
-1. `GEMINI_API_KEY`
+1. `MODEL_NAME`
+By default this project use `gemini-1.5-flash` as `model_name`. You can change it with another models like `gemini-1.5-pro` or `gemini-1.5-flash-8b`.
+
+```bash
+MODEL_NAME=gemini-1.5-flash
+```
+
+2. `GEMINI_API_KEY`
 Replace `YOUR_API_KEY` with your actual Gemini API Key.
 
 ```bash
 GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-2. `MODEL_NAME`
-By default this project use `gemini-1.5-flash` as `model_name`. You can change it with another models like `gemini-1.5-pro` or `gemini-1.5-flash-8b`.
+3. `WELCOME_MESSAGE`
+It has a default value, you can adjust it to give a related message with your chatbot topic.
 
 ```bash
-GEMINI_API_KEY=YOUR_API_KEY
+WELCOME_MESSAGE="Halo..."
 ```
 
-3. `SYSTEM_INSTRUCTION`:
+4. `SYSTEM_INSTRUCTION`:
 Replace `YOUR_INSTRUCTION` with your actual `system_instruction`. The more detail the instructions you give, the more detail result you get.
 
 ```bash
 SYSTEM_INSTRUCTION=YOUR_INSTRUCTION
 ```
 
-4.  Run the Script:
+5.  Run the Script:
 I prefer to use `docker`, so make sure you have it.
 
 ```bash
